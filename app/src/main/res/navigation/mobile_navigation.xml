@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_perfil">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.clinica_medica.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/nav_perfil"
+        android:name="com.clinica_medica.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.clinica_medica.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_cita"
+        android:name="com.clinica_medica.ui.cita.CitaFragment"
+        android:label="@string/menu_cita"
+        tools:layout="@layout/fragment_cita" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.clinica_medica.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_expediente"
+        android:name="com.clinica_medica.ui.expediente.ExpedienteFragment"
+        android:label="@string/menu_expediente"
+        tools:layout="@layout/fragment_expediente" />
+    <fragment
+        android:id="@+id/nav_servicio"
+        android:name="com.clinica_medica.ui.servicio.ServicioFragment"
+        android:label="@string/menu_servicio"
+        tools:layout="@layout/fragment_servicio" />
+    <fragment
+        android:id="@+id/nav_promocion"
+        android:name="com.clinica_medica.ui.promocion.PromocionFragment"
+        android:label="@string/menu_promocion"
+        tools:layout="@layout/fragment_promocion" />
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.clinica_medica.ui.contacto.ContactoFragment"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contacto" />
 </navigation>

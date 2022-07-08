@@ -1,4 +1,4 @@
-package com.clinica_medica.ui.home
+package com.clinica_medica.ui.perfil
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.clinica_medica.databinding.FragmentHomeBinding
+import com.clinica_medica.databinding.FragmentPerfilBinding
+import com.clinica_medica.viewmodel.PerfilViewModel
 
-class HomeFragment : Fragment() {
+class PerfilFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentPerfilBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +23,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val perfilViewModel =
+            ViewModelProvider(this).get(PerfilViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentPerfilBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        perfilViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
