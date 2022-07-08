@@ -7,13 +7,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:srcCompat="@mipmap/ic_logo_foreground" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_correo"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_correo"
@@ -23,13 +38,15 @@
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textSize="24sp" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_clave"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_clave"
@@ -42,7 +59,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="106dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -58,6 +75,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_login" />
+
     </LinearLayout>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imv_logo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:srcCompat="@mipmap/ic_muneca_foreground" />
 
 </LinearLayout>
