@@ -12,12 +12,26 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-<!--    Valores del Slideshow-->
+    <!--    Valores del Slideshow-->
     <string name="menu_perfil">Perfil</string>
     <string name="menu_cita">Citas</string>
     <string name="menu_expediente">Expedientes</string>
     <string name="menu_servicio">Servicios</string>
     <string name="menu_promocion">Promociones</string>
     <string name="menu_contacto">Contacto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    Valores para agregar un servicio-->
+    <string name="msg_nombreServicio">Nombre del Servicio</string>
+    <string name="msg_descripcionServicio">Descripción del Servicio</string>
+    <string name="msg_costo">Costo del Servicio</string>
+    <string name="bt_agregarServicio">Agregar nuevo servicio</string>
+
+    <!--    Valores para agregar una promoción-->
+    <string name="msg_nombrePromocion">Nombre de la Promoción</string>
+    <string name="msg_descripcionPromocion">Descripción de la Promoción</string>
+    <string name="msg_descuento">Descuento Aplicado</string>
+    <string name="bt_agregarPromocion">Agregar nueva promoción</string>
 
 </resources>

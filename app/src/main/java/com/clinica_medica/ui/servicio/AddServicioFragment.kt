@@ -1,20 +1,19 @@
 package com.clinica_medica.ui.servicio
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.clinica_medica.R
-import com.clinica_medica.databinding.FragmentServicioBinding
+import com.clinica_medica.databinding.FragmentAddServicioBinding
 import com.clinica_medica.viewmodel.ServicioViewModel
 
-class ServicioFragment : Fragment() {
+class AddServicioFragment : Fragment() {
 
     private lateinit var servicioViewModel: ServicioViewModel
-    private var _binding: FragmentServicioBinding? = null
+    private var _binding: FragmentAddServicioBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,11 +21,9 @@ class ServicioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         servicioViewModel = ViewModelProvider(this)[ServicioViewModel::class.java]
-        _binding = FragmentServicioBinding.inflate(inflater, container, false)
+        _binding = FragmentAddServicioBinding.inflate(inflater, container, false)
 
-        binding.addServicioButton.setOnClickListener{
-            findNavController().navigate(R.id.action_nav_servicio_to_addServicioFragment)
-        }
+//        binding.btAddServicio.setOnClickListener { addServicio() }
 
         return binding.root
     }
@@ -35,5 +32,4 @@ class ServicioFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

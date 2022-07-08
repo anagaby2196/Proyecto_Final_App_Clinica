@@ -24,15 +24,41 @@
         android:id="@+id/nav_servicio"
         android:name="com.clinica_medica.ui.servicio.ServicioFragment"
         android:label="@string/menu_servicio"
-        tools:layout="@layout/fragment_servicio" />
+        tools:layout="@layout/fragment_servicio" >
+        <action
+            android:id="@+id/action_nav_servicio_to_addServicioFragment"
+            app:destination="@id/addServicioFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_promocion"
         android:name="com.clinica_medica.ui.promocion.PromocionFragment"
         android:label="@string/menu_promocion"
-        tools:layout="@layout/fragment_promocion" />
+        tools:layout="@layout/fragment_promocion" >
+        <action
+            android:id="@+id/action_nav_promocion_to_addPromocionFragment"
+            app:destination="@id/addPromocionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_contacto"
         android:name="com.clinica_medica.ui.contacto.ContactoFragment"
         android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/addServicioFragment"
+        android:name="com.clinica_medica.ui.servicio.AddServicioFragment"
+        android:label="@string/bt_agregarServicio"
+        tools:layout="@layout/fragment_add_servicio" >
+        <action
+            android:id="@+id/action_addServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPromocionFragment"
+        android:name="com.clinica_medica.ui.promocion.AddPromocionFragment"
+        android:label="@string/bt_agregarPromocion"
+        tools:layout="@layout/fragment_add_promocion" >
+        <action
+            android:id="@+id/action_addPromocionFragment_to_nav_promocion"
+            app:destination="@id/nav_promocion" />
+    </fragment>
 </navigation>
