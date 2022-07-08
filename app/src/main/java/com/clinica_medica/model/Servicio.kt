@@ -17,7 +17,7 @@ data class Servicio(
     @ColumnInfo(name="descripcion")
     val descripcion:String,
     @ColumnInfo(name="costo")
-    val costo:Double,
+    val costo:Int,
     @ColumnInfo(name="rutaImagen")
     val rutaImagen:String?
 ) : Parcelable
