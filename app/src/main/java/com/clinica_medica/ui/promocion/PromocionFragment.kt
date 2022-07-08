@@ -7,9 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.clinica_medica.R
+import com.clinica_medica.adapter.PromocionAdapter
+import com.clinica_medica.adapter.ServicioAdapter
 import com.clinica_medica.databinding.FragmentPromocionBinding
 import com.clinica_medica.viewmodel.PromocionViewModel
+import com.clinica_medica.viewmodel.ServicioViewModel
 
 class PromocionFragment : Fragment() {
 
@@ -26,6 +30,19 @@ class PromocionFragment : Fragment() {
 
         binding.addPromocionButton.setOnClickListener{
             findNavController().navigate(R.id.action_nav_promocion_to_addPromocionFragment)
+        }
+
+        //Activar el reciclador - RecyclerView
+        val promocionAdapter = PromocionAdapter()
+        val recicladorPromocion = binding.recicladorPromocion
+
+        recicladorPromocion.adapter = promocionAdapter
+        recicladorPromocion.layoutManager = LinearLayoutManager(requireContext())
+
+        promocionViewModel = ViewModelProvider(this)[PromocionViewModel::class.java]
+
+        promocionViewModel.getAllData.observe(viewLifecycleOwner) {
+                promociones -> promocionAdapter.setData(promociones)
         }
 
         return binding.root
