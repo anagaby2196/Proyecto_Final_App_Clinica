@@ -72,4 +72,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    public override fun onStart() {
+        super.onStart()
+        val usuario = auth.currentUser
+        actualiza(usuario)
+    }
 }

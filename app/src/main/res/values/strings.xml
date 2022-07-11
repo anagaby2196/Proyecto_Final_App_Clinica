@@ -31,7 +31,13 @@
     <string name="servicioAdded">Servicio agregado</string>
     <string name="noDataServicio">Fallo agregando servicio. Faltan datos.</string>
     <string name="servicioUpdated">Servicio actualizado</string>
-    <string name="failServicio">Fallo actualizando</string>
+    <string name="delete">Eliminar servicio</string>
+
+<!--    Globales-->
+    <string name="fail">Fallo actualizando</string>
+    <string name="seguroBorrar">"¿Está seguro de eliminar "</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
     <!--    Valores para agregar una promoción-->
     <string name="msg_nombrePromocion">Nombre de la Promoción</string>
@@ -42,8 +48,5 @@
     <string name="promocionAdded">Promoción agregada</string>
     <string name="noDataPromocion">Fallo agregando promoción. Faltan datos.</string>
     <string name="promocionUpdated">Promoción actualizada</string>
-    <string name="failPromocion">Fallo actualizando</string>
-
-
-
+    <string name="deletePromocion">Eliminar Promoción</string>
 </resources>

@@ -1,10 +1,9 @@
 package com.clinica_medica.ui.servicio
 
+import android.app.AlertDialog
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -35,6 +34,8 @@ class UpdateServicioFragment : Fragment() {
 
         binding.btActualizarServicio.setOnClickListener { updateServicio() }
 
+        setHasOptionsMenu(true)
+
         return binding.root
     }
 
@@ -49,9 +50,35 @@ class UpdateServicioFragment : Fragment() {
             Toast.makeText(requireContext(),getString(R.string.servicioUpdated), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateServicioFragment_to_nav_servicio)
         } else {
-            Toast.makeText(requireContext(),getString(R.string.failServicio), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.fail), Toast.LENGTH_SHORT).show()
 
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.delete_menu,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId==R.id.menu_delete) {
+            deleteServicios()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deleteServicios() {
+        val consulta = AlertDialog.Builder(requireContext())
+
+        consulta.setTitle(R.string.delete)
+        consulta.setMessage(getString(R.string.seguroBorrar)+"${args.servicio.nombreServicio}?")
+
+        consulta.setPositiveButton(getString(R.string.si)) {_,_ ->
+            servicioViewModel.deleteServicio(args.servicio)
+            findNavController().navigate(R.id.action_updateServicioFragment_to_nav_servicio)
+        }
+        consulta.setNegativeButton(getString(R.string.no)) {_,_ ->}
+
+        consulta.create().show()
     }
 
     override fun onDestroyView() {

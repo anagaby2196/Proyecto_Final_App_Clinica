@@ -1,10 +1,9 @@
 package com.clinica_medica.ui.promocion
 
+import android.app.AlertDialog
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -36,6 +35,8 @@ class UpdatePromocionFragment : Fragment() {
 
         binding.btActualizarPromocion.setOnClickListener { updatePromocion() }
 
+        setHasOptionsMenu(true)
+
         return binding.root
     }
 
@@ -50,8 +51,34 @@ class UpdatePromocionFragment : Fragment() {
             Toast.makeText(requireContext(),getString(R.string.promocionUpdated), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updatePromocionFragment_to_nav_promocion)
         } else {
-            Toast.makeText(requireContext(),getString(R.string.failPromocion), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.fail), Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.delete_menu,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId==R.id.menu_delete) {
+            deletePromocion()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deletePromocion() {
+        val consulta = AlertDialog.Builder(requireContext())
+
+        consulta.setTitle(R.string.deletePromocion)
+        consulta.setMessage(getString(R.string.seguroBorrar)+"${args.promocion.nombrePromocion}?")
+
+        consulta.setPositiveButton(getString(R.string.si)) {_,_ ->
+            promocionViewModel.deletePromocion(args.promocion)
+            findNavController().navigate(R.id.action_updatePromocionFragment_to_nav_promocion)
+        }
+        consulta.setNegativeButton(getString(R.string.no)) {_,_ ->}
+
+        consulta.create().show()
     }
 
     override fun onDestroyView() {

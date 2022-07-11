@@ -70,7 +70,7 @@
     <fragment
         android:id="@+id/updateServicioFragment"
         android:name="com.clinica_medica.ui.servicio.UpdateServicioFragment"
-        android:label="fragment_update_servicio"
+        android:label="@string/bt_actualizarServicio"
         tools:layout="@layout/fragment_update_servicio" >
         <action
             android:id="@+id/action_updateServicioFragment_to_nav_servicio"
@@ -82,7 +82,7 @@
     <fragment
         android:id="@+id/updatePromocionFragment"
         android:name="com.clinica_medica.ui.promocion.UpdatePromocionFragment"
-        android:label="fragment_update_promocion"
+        android:label="@string/bt_actualizarPromocion"
         tools:layout="@layout/fragment_update_promocion" >
         <action
             android:id="@+id/action_updatePromocionFragment_to_nav_promocion"
