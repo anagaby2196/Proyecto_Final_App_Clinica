@@ -27,6 +27,7 @@
     <string name="msg_descripcionServicio">Descripción del Servicio</string>
     <string name="msg_costo">Costo del Servicio</string>
     <string name="bt_agregarServicio">Agregar nuevo servicio</string>
+    <string name="bt_actualizarServicio">Actualizar servicio</string>
     <string name="servicioAdded">Servicio agregado</string>
     <string name="noDataServicio">Fallo agregando servicio. Faltan datos.</string>
 
@@ -37,6 +38,8 @@
     <string name="bt_agregarPromocion">Agregar nueva promoción</string>
     <string name="promocionAdded">Promoción agregada</string>
     <string name="noDataPromocion">Fallo agregando promoción. Faltan datos.</string>
+    <string name="servicioUpdated">Servicio actualizado</string>
+    <string name="failServicio">Fallo actualizando</string>
 
 
 </resources>

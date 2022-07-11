@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_nav_servicio_to_addServicioFragment"
             app:destination="@id/addServicioFragment" />
+        <action
+            android:id="@+id/action_nav_servicio_to_updateServicioFragment"
+            app:destination="@id/updateServicioFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_promocion"
@@ -60,5 +63,17 @@
         <action
             android:id="@+id/action_addPromocionFragment_to_nav_promocion"
             app:destination="@id/nav_promocion" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateServicioFragment"
+        android:name="com.clinica_medica.ui.servicio.UpdateServicioFragment"
+        android:label="fragment_update_servicio"
+        tools:layout="@layout/fragment_update_servicio" >
+        <action
+            android:id="@+id/action_updateServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+        <argument
+            android:name="servicio"
+            app:argType="com.clinica_medica.model.Servicio" />
     </fragment>
 </navigation>

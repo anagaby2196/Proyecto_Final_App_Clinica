@@ -18,10 +18,10 @@ class ServicioAdapter : RecyclerView.Adapter<ServicioAdapter.ServicioViewHolder>
             itemBinding.tvDescripcionServicio.text = servicio.descripcion
             itemBinding.tvCosto.text = servicio.costo.toString()
 
-//            itemBinding.vistaFila.setOnClickListener{
-//                val accion = ServicioFragmentDirections.actionNavClinicaToUpdateServicioFragment(servicio)
-//                itemView.findNavController().navigate(accion)
-//            }
+            itemBinding.vistaFilaServicios.setOnClickListener{
+                val accion = ServicioFragmentDirections.actionNavServicioToUpdateServicioFragment(servicio)
+                itemView.findNavController().navigate(accion)
+            }
         }
     }
 
