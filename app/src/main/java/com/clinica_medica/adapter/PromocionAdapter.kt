@@ -5,9 +5,8 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.clinica_medica.databinding.PromocionFilaBinding
-import com.clinica_medica.databinding.ServicioFilaBinding
 import com.clinica_medica.model.Promocion
-
+import com.clinica_medica.ui.promocion.PromocionFragmentDirections
 
 class PromocionAdapter : RecyclerView.Adapter<PromocionAdapter.PromocionViewHolder>() {
 
@@ -19,10 +18,10 @@ class PromocionAdapter : RecyclerView.Adapter<PromocionAdapter.PromocionViewHold
             itemBinding.tvDescripcionPromocion.text = promocion.descripcion
             itemBinding.tvDescuento.text = promocion.descuento.toString()
 
-//            itemBinding.vistaFila.setOnClickListener{
-//                val accion = ServicioFragmentDirections.actionNavClinicaToUpdateServicioFragment(servicio)
-//                itemView.findNavController().navigate(accion)
-//            }
+            itemBinding.vistaFilaPromociones.setOnClickListener{
+                val accion = PromocionFragmentDirections.actionNavPromocionToUpdatePromocionFragment(promocion)
+                itemView.findNavController().navigate(accion)
+            }
         }
     }
 

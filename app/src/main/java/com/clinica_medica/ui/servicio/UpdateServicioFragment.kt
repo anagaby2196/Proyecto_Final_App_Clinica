@@ -33,7 +33,6 @@ class UpdateServicioFragment : Fragment() {
         binding.etDescripcionServicio.setText(args.servicio.descripcion)
         binding.etCosto.setText(args.servicio.costo.toString())
 
-
         binding.btActualizarServicio.setOnClickListener { updateServicio() }
 
         return binding.root

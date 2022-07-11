@@ -30,16 +30,20 @@
     <string name="bt_actualizarServicio">Actualizar servicio</string>
     <string name="servicioAdded">Servicio agregado</string>
     <string name="noDataServicio">Fallo agregando servicio. Faltan datos.</string>
+    <string name="servicioUpdated">Servicio actualizado</string>
+    <string name="failServicio">Fallo actualizando</string>
 
     <!--    Valores para agregar una promoción-->
     <string name="msg_nombrePromocion">Nombre de la Promoción</string>
     <string name="msg_descripcionPromocion">Descripción de la Promoción</string>
     <string name="msg_descuento">Descuento Aplicado</string>
     <string name="bt_agregarPromocion">Agregar nueva promoción</string>
+    <string name="bt_actualizarPromocion">Actualizar promoción</string>
     <string name="promocionAdded">Promoción agregada</string>
     <string name="noDataPromocion">Fallo agregando promoción. Faltan datos.</string>
-    <string name="servicioUpdated">Servicio actualizado</string>
-    <string name="failServicio">Fallo actualizando</string>
+    <string name="promocionUpdated">Promoción actualizada</string>
+    <string name="failPromocion">Fallo actualizando</string>
+
 
 
 </resources>
