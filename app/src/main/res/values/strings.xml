@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Clínica Médica del Pie</string>
     <string name="tv_correo">Correo</string>
-
     <string name="tv_clave">Contraseña</string>
     <string name="msg_fallo_registro">Error registrando usuario</string>
     <string name="msg_fallo_login">Error haciendo login</string>
@@ -13,7 +12,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!--    Valores del Slideshow   -->
+    <!--    Valores del Slideshow-->
     <string name="menu_perfil">Perfil</string>
     <string name="menu_cita">Citas</string>
     <string name="menu_expediente">Expedientes</string>
@@ -23,7 +22,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    Valores para agregar un servicio    -->
+<!--    Valores para agregar un servicio-->
     <string name="msg_nombreServicio">Nombre del Servicio</string>
     <string name="msg_descripcionServicio">Descripción del Servicio</string>
     <string name="msg_costo">Costo del Servicio</string>
@@ -34,13 +33,13 @@
     <string name="servicioUpdated">Servicio actualizado</string>
     <string name="delete">Eliminar servicio</string>
 
-<!--    Globales    -->
+<!--    Globales-->
     <string name="fail">Fallo actualizando</string>
     <string name="seguroBorrar">"¿Está seguro de eliminar "</string>
     <string name="si">Si</string>
     <string name="no">No</string>
 
-    <!--    Valores para agregar una promoción  -->
+    <!--    Valores para agregar una promoción-->
     <string name="msg_nombrePromocion">Nombre de la Promoción</string>
     <string name="msg_descripcionPromocion">Descripción de la Promoción</string>
     <string name="msg_descuento">Descuento Aplicado</string>
@@ -50,22 +49,18 @@
     <string name="noDataPromocion">Fallo agregando promoción. Faltan datos.</string>
     <string name="promocionUpdated">Promoción actualizada</string>
     <string name="deletePromocion">Eliminar Promoción</string>
-    <!--    Perfil  -->
-    <string name="msg_nombre">Nombre</string>
-    <string name="msg_primerapellido">Primer Apellido</string>
-    <string name="msg_segundoapellido">Segundo Apellido</string>
-    <string name="msg_identificacion">Identificación</string>
-    <string name="msg_telefono">Telefono</string>
-    <string name="msg_correo">Correo</string>
-    <string name="msg_edad">Edad</string>
-    <string name="msg_genero">Genero</string>
-    <string name="msg_direccion">Direccion</string>
-    <string name="msg_fechanacimiento">Fecha de nacimiento</string>
-    <string name="msg_Peso">Peso</string>
-    <string name="msg_estatura">Estatura</string>
-    <string name="msg_fechaCita">Fecha de cita</string>
-    <string name="msg_proximaCita">Proxima cita</string>
-    <string name="msg_recordatorio">Recordatorio</string>
-    <string name="msg_historialMedico">Historial Medico</string>
+
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_map_view">Ver lugar en mapa</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="msg_datos">Faltan datos</string>
+    <string name="error">Error</string>
 
 </resources>
