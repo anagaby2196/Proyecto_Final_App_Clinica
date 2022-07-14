@@ -32,6 +32,12 @@
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/delete_promociones_menu.xml" value="0.1" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/delete_servicios_menu.xml" value="0.16" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/principal.xml" value="0.25" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/drawable/ic_service.xml" value="0.1825" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/layout/activity_main.xml" value="0.29583333333333334" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_promocion.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_contacto.xml" value="0.22838137472283815" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_promocion.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/user/StudioProjects/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_servicio.xml" value="0.2658514492753623" />
       </map>
     </option>
   </component>
@@ -40,5 +46,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>
