@@ -37,22 +37,30 @@
                         android:text="@string/msg_nombre" />
                 </LinearLayout>
             </TableRow>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/vistaFilaServicios"
+                    android:id="@+id/vistaFilaPerfil"
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="#DFDFDF"
                     app:cardCornerRadius="25dp"
-                    app:cardElevation="30dp">
-
+                    app:cardElevation="5dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="89dp">
+                        android:layout_width="381dp"
+                        android:layout_height="89dp"
+                        tools:layout_editor_absoluteX="1dp">
 
                         <TextView
                             android:id="@+id/et_recordatorio"
@@ -61,6 +69,7 @@
                             android:layout_marginTop="8dp"
                             android:text="@string/msg_recordatorio"
                             android:textAlignment="center"
+                            android:textColor="#020202"
                             android:textSize="24sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -71,36 +80,44 @@
                             android:id="@+id/et_proximacita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/msg_proximaCita"
                             android:textAlignment="center"
+                            android:textColor="#000000"
                             android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.184"
+                            app:layout_constraintHorizontal_bias="0.221"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/et_recordatorio"
-                            app:layout_constraintVertical_bias="0.157" />
+                            app:layout_constraintVertical_bias="0.407" />
 
                         <EditText
-                            android:id="@+id/etFechaCita"
-                            android:layout_width="129dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="60dp"
-                            android:layout_marginBottom="4dp"
-                            android:layout_weight="1"
+                            android:id="@+id/etd_fechaCita"
+                            android:layout_width="115dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="2dp"
                             android:ems="10"
-                            android:inputType="textPersonName"
-                            android:text="@string/msg_fechaCita"
+                            android:inputType="date"
+                            android:text="15/07/2022"
+                            android:textColor="#000000"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintHorizontal_bias="0.265"
                             app:layout_constraintStart_toEndOf="@+id/et_proximacita"
-                            app:layout_constraintTop_toBottomOf="@+id/et_recordatorio" />
+                            app:layout_constraintTop_toBottomOf="@+id/et_recordatorio"
+                            app:layout_constraintVertical_bias="0.0" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
             </TableRow>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -108,14 +125,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/ibFechaNacimiento"
-                        android:layout_width="60dp"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact" />
+                        android:src="@drawable/ic_fecha_nacimiento"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
                     <EditText
                         android:id="@+id/etFechaNacimiento"
                         android:layout_width="129dp"
@@ -123,7 +143,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/msg_fechanacimiento" />
+                        android:text="@string/msg_fechanacimiento"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <ImageButton
                         android:id="@+id/ibPeso"
                         android:layout_width="34dp"
@@ -131,7 +154,9 @@
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact"/>
+                        android:src="@drawable/ic_peso"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
                     <EditText
                         android:id="@+id/etPeso"
                         android:layout_width="182dp"
@@ -139,7 +164,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/msg_Peso"/>
+                        android:text="@string/msg_Peso"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </TableRow>
             <TableRow
@@ -149,14 +175,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/ibDireccion"
-                        android:layout_width="60dp"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact" />
+                        android:src="@drawable/ic_direccion"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
                     <EditText
                         android:id="@+id/etDireccion"
                         android:layout_width="129dp"
@@ -164,7 +193,9 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/msg_Peso"/>
+                        android:text="@string/msg_direccion"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <ImageButton
                         android:id="@+id/ibEstatura"
                         android:layout_width="34dp"
@@ -172,7 +203,9 @@
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact" />
+                        android:src="@drawable/ic_altura"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
                     <EditText
                         android:id="@+id/etEstatura"
                         android:layout_width="182dp"
@@ -180,9 +213,17 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/msg_estatura" />
+                        android:text="@string/msg_estatura"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </TableRow>
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -190,14 +231,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/ib_telefono"
-                        android:layout_width="104dp"
+                        android:layout_width="13dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact" />
+                        android:src="@drawable/ic_call"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
                     <EditText
                         android:id="@+id/et_telefono"
                         android:layout_width="304dp"
@@ -205,7 +249,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="phone"
-                        android:text="@string/msg_telefono" />
+                        android:text="@string/msg_telefono"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </TableRow>
             <TableRow
@@ -215,14 +260,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/ib_correo"
-                        android:layout_width="104dp"
+                        android:layout_width="12dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:background="#00FFFFFF"
-                        android:src="@drawable/ic_contact" />
+                        android:src="@drawable/ic_email"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
                     <EditText
                         android:id="@+id/it_correo"
                         android:layout_width="304dp"
@@ -230,9 +278,17 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textEmailAddress"
-                        android:text="@string/msg_correo" />
+                        android:text="@string/msg_correo"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </TableRow>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -242,17 +298,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/et_historialMedico"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/msg_historialMedico" />
 
                     <TextView
-                        android:id="@+id/etTexto"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_historialMedico"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="sdgdfujkghljdfkglkjdfghlkjdfhlgjkdhflgjkdflgjkdf" />
+                        android:text="@string/msg_historialMedico"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_historialMedico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mi, interdum quis arcu non, fringilla molestie nibh. Etiam a sodales arcu. Nulla lectus purus, pulvinar eget elit non, vehicula euismod justo. Maecenas facilisis magna at condimentum aliquet. Donec at est dui. Curabitur vestibulum, nibh et tincidunt mattis, leo nunc ultrices diam, sed porta risus neque at eros. Pellentesque lobortis libero vel pretium congue. "
+                        android:textAlignment="viewStart" />
+
                 </LinearLayout>
 
 
