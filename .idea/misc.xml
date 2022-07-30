@@ -16,10 +16,10 @@
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/app_bar_principal.xml" value="0.264" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/content_pantalla_index.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/content_principal.xml" value="0.24615384615384617" />
-        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_promocion.xml" value="0.1" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_promocion.xml" value="0.4" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_servicio.xml" value="0.1" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_cita.xml" value="0.6" />
-        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_contacto.xml" value="0.46174142480211083" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_contacto.xml" value="0.4" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_expediente.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_perfil.xml" value="0.4" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_promocion.xml" value="0.1" />
@@ -33,6 +33,8 @@
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/delete_promociones_menu.xml" value="0.1" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/delete_servicios_menu.xml" value="0.16" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/menu/principal.xml" value="0.25" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/mipmap-anydpi-v26/ic_instagram_round.xml" value="0.2555" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.146" />
       </map>
     </option>
   </component>

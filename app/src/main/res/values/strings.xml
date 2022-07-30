@@ -56,8 +56,9 @@
     <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
     <string name="msg_web_view">Abrir sitio Web</string>
     <string name="msg_map_view">Ver lugar en mapa</string>
-    <string name="msg_saludos">Saludos amigos</string>
-    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+<!--    <string name="msg_saludos">Buenas!</string>-->
+<!--    <string name="msg_mensaje_correo">¿Quería consultar si tenían disponibilidad para agendar una cita hoy a las 2:00 pm? Estoy presentando-->
+<!--    un malestar en una de mis uñas y quería saber si ustedes me podían ayudar con eso? Gracias.</string>-->
     <string name="msg_datos">Faltan datos</string>
     <string name="error">Error</string>
 
