@@ -24,11 +24,19 @@ class PerfilFragment : Fragment() {
     ): View {
         perfilViewModel = ViewModelProvider(this)[PerfilViewModel::class.java]
         _binding = FragmentPerfilBinding.inflate(inflater, container, false)
-       perfilViewModel = ViewModelProvider(this)[PerfilViewModel::class.java]
+
+        binding.ibAddPerfil.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_perfil_to_addPerfilFragment)
+        }
+
+        perfilViewModel = ViewModelProvider(this)[PerfilViewModel::class.java]
+
         return binding.root
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }

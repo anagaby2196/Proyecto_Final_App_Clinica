@@ -22,7 +22,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    Valores para agregar un servicio-->
+    <!--    Valores para agregar un servicio-->
     <string name="msg_nombreServicio">Nombre del Servicio</string>
     <string name="msg_descripcionServicio">Descripción del Servicio</string>
     <string name="msg_costo">Costo del Servicio</string>
@@ -33,7 +33,7 @@
     <string name="servicioUpdated">Servicio actualizado</string>
     <string name="delete">Eliminar servicio</string>
 
-<!--    Globales-->
+    <!--    Globales-->
     <string name="fail">Fallo actualizando</string>
     <string name="seguroBorrar">"¿Está seguro de eliminar "</string>
     <string name="si">Si</string>
@@ -56,9 +56,9 @@
     <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
     <string name="msg_web_view">Abrir sitio Web</string>
     <string name="msg_map_view">Ver lugar en mapa</string>
-<!--    <string name="msg_saludos">Buenas!</string>-->
-<!--    <string name="msg_mensaje_correo">¿Quería consultar si tenían disponibilidad para agendar una cita hoy a las 2:00 pm? Estoy presentando-->
-<!--    un malestar en una de mis uñas y quería saber si ustedes me podían ayudar con eso? Gracias.</string>-->
+    <!--    <string name="msg_saludos">Buenas!</string>-->
+    <!--    <string name="msg_mensaje_correo">¿Quería consultar si tenían disponibilidad para agendar una cita hoy a las 2:00 pm? Estoy presentando-->
+    <!--    un malestar en una de mis uñas y quería saber si ustedes me podían ayudar con eso? Gracias.</string>-->
     <string name="msg_datos">Faltan datos</string>
     <string name="error">Error</string>
 
@@ -79,4 +79,9 @@
     <string name="msg_proximaCita">Próxima cita</string>
     <string name="msg_recordatorio">Recordatorio</string>
     <string name="msg_historialMedico">Historial Médico</string>
+    <string name="bt_actualizarPerfil">Actualizar Perfil</string>
+    <string name="bt_addPerfil">Agregar Datos del Perfil</string>
+    <string name="perfilUpdated">Perfil actualizado</string>
+    <string name="perfilAdded">Datos del perfil agregados</string>
+    <string name="noDataPerfil">Fallo agregando datos al perfil. Faltan datos.</string>
 </resources>

@@ -14,9 +14,9 @@ data class Perfil(
     @PrimaryKey(autoGenerate = true)
     val id:Int,
     @ColumnInfo(name="nombreUsuario")
-    val nombreServicio:String,
+    val nombreUsuario:String,
     @ColumnInfo(name="fechaNacimiento")
-    val fechaNacimiento:Date,
+    val fechaNacimiento:Int,
     @ColumnInfo(name="direccion")
     val direccion:String,
     @ColumnInfo(name="peso")
@@ -24,7 +24,7 @@ data class Perfil(
     @ColumnInfo(name="estatura")
     val estatura:Double,
     @ColumnInfo(name="numeroTelefono")
-    val numeroTelefono:String,
+    val numeroTelefono:Int,
     @ColumnInfo(name="correoElectronico")
     val correoElectronico:String,
     @ColumnInfo(name="historial")

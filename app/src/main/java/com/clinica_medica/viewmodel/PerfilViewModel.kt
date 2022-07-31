@@ -1,13 +1,43 @@
 package com.clinica_medica.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.*
+import com.clinica_medica.data.PerfilDatabase
+import com.clinica_medica.data.PromocionDatabase
+import com.clinica_medica.model.Perfil
+import com.clinica_medica.model.Promocion
+import com.clinica_medica.repository.PerfilRepository
+import com.clinica_medica.repository.PromocionRepository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-class PerfilViewModel : ViewModel() {
+class PerfilViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
-    }
-    val text: LiveData<String> = _text
+//    val getAllData: LiveData<List<Perfil>>
+//
+//    private val repository: PerfilRepository
+//
+//    init {
+//        val perfilDao = PerfilDatabase.getDatabase(application).perfilDao()
+//        repository = PerfilRepository(perfilDao)
+//        getAllData = repository.getAllData
+//    }
+//
+//    fun addPerfil (perfil: Perfil) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.addPerfil(perfil)
+//        }
+//    }
+//
+//    fun updatePerfil (perfil: Perfil) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.updatePerfil(perfil)
+//        }
+//    }
+//
+//    fun deletePerfil(perfil: Perfil) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.deletePerfil(perfil)
+//        }
+//    }
 }
