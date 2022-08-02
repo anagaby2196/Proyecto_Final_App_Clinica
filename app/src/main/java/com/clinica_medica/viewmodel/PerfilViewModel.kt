@@ -11,32 +11,32 @@ import kotlinx.coroutines.launch
 
 class PerfilViewModel(application: Application) : AndroidViewModel(application) {
 
-//    val getAllData: LiveData<List<Perfil>>
-//
-//    private val repository: PerfilRepository
-//
-//    init {
-//        val perfilDao = PerfilDatabase.getDatabase(application).perfilDao()
-//        repository = PerfilRepository(perfilDao)
-//        getAllData = repository.getAllData
-//    }
-//
-//    fun addDatosPerfil(perfil: Perfil) {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            repository.addDatosPerfil(perfil)
-//        }
-//    }
-//
-//    fun updatePerfil(perfil: Perfil) {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            repository.updatePerfil(perfil)
-//        }
-//    }
-//
-//    fun deletePerfil (perfil: Perfil) {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            repository.deletePerfil(perfil)
-//        }
-//    }
+    val getAllData: LiveData<List<Perfil>>
+
+    private val repository: PerfilRepository
+
+    init {
+        val perfilDao = PerfilDatabase.getDatabase(application).perfilDao()
+        repository = PerfilRepository(perfilDao)
+        getAllData = repository.getAllData
+    }
+
+    fun addDatosPerfil(perfil: Perfil) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.addDatosPerfil(perfil)
+        }
+    }
+
+    fun updatePerfil(perfil: Perfil) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.updatePerfil(perfil)
+        }
+    }
+
+    fun deletePerfil (perfil: Perfil) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deletePerfil(perfil)
+        }
+    }
 
 }
