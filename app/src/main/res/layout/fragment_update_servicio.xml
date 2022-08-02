@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/msg_nombreServicio"
+                android:hint="@string/msg_nombre_servicio"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/msg_descripcionServicio"
+                android:hint="@string/msg_descripcion_servicio"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -48,7 +48,7 @@
                 android:id="@+id/btActualizarServicio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bt_actualizarServicio" />
+                android:text="@string/bt_actualizar_servicio" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

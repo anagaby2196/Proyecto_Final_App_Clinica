@@ -8,9 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.clinica_medica.databinding.FragmentCitaBinding
-import com.clinica_medica.databinding.FragmentPerfilBinding
 import com.clinica_medica.viewmodel.CitaViewModel
-import com.clinica_medica.viewmodel.PerfilViewModel
 
 class CitaFragment : Fragment() {
 

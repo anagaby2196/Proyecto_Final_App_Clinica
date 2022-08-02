@@ -11,7 +11,6 @@ import androidx.navigation.fragment.navArgs
 import com.clinica_medica.R
 import com.clinica_medica.databinding.FragmentUpdatePromocionBinding
 import com.clinica_medica.model.Promocion
-import com.clinica_medica.ui.promocion.UpdatePromocionFragmentArgs
 import com.clinica_medica.viewmodel.PromocionViewModel
 
 class UpdatePromocionFragment : Fragment() {
@@ -48,7 +47,7 @@ class UpdatePromocionFragment : Fragment() {
         if(nombrePromocion.isNotEmpty()) {
             val promocion = Promocion(args.promocion.id,nombrePromocion,descripcionPromocion,descuento.toInt())
             promocionViewModel.updatePromocion(promocion)
-            Toast.makeText(requireContext(),getString(R.string.promocionUpdated), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.promocion_updated), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updatePromocionFragment_to_nav_promocion)
         } else {
             Toast.makeText(requireContext(),getString(R.string.fail), Toast.LENGTH_SHORT).show()
@@ -69,8 +68,8 @@ class UpdatePromocionFragment : Fragment() {
     private fun deletePromocion() {
         val consulta = AlertDialog.Builder(requireContext())
 
-        consulta.setTitle(R.string.deletePromocion)
-        consulta.setMessage(getString(R.string.seguroBorrar)+"${args.promocion.nombrePromocion}?")
+        consulta.setTitle(R.string.delete_promocion)
+        consulta.setMessage(getString(R.string.seguro_borrar)+"${args.promocion.nombrePromocion}?")
 
         consulta.setPositiveButton(getString(R.string.si)) {_,_ ->
             promocionViewModel.deletePromocion(args.promocion)

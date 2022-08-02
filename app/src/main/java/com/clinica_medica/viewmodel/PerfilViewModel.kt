@@ -3,11 +3,9 @@ package com.clinica_medica.viewmodel
 import android.app.Application
 import androidx.lifecycle.*
 import com.clinica_medica.data.PerfilDatabase
-import com.clinica_medica.data.PromocionDatabase
 import com.clinica_medica.model.Perfil
 import com.clinica_medica.model.Promocion
 import com.clinica_medica.repository.PerfilRepository
-import com.clinica_medica.repository.PromocionRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -23,21 +21,22 @@ class PerfilViewModel(application: Application) : AndroidViewModel(application) 
 //        getAllData = repository.getAllData
 //    }
 //
-//    fun addPerfil (perfil: Perfil) {
+//    fun addDatosPerfil(perfil: Perfil) {
 //        viewModelScope.launch(Dispatchers.IO) {
-//            repository.addPerfil(perfil)
+//            repository.addDatosPerfil(perfil)
 //        }
 //    }
 //
-//    fun updatePerfil (perfil: Perfil) {
+//    fun updatePerfil(perfil: Perfil) {
 //        viewModelScope.launch(Dispatchers.IO) {
 //            repository.updatePerfil(perfil)
 //        }
 //    }
 //
-//    fun deletePerfil(perfil: Perfil) {
+//    fun deletePerfil (perfil: Perfil) {
 //        viewModelScope.launch(Dispatchers.IO) {
 //            repository.deletePerfil(perfil)
 //        }
 //    }
+
 }

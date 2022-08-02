@@ -6,367 +6,147 @@
     android:layout_height="match_parent"
     tools:context=".ui.perfil.PerfilFragment">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/vistaFilaPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#DFDFDF"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="381dp"
+                    android:layout_height="89dp"
+                    tools:layout_editor_absoluteX="1dp">
+
+                    <TextView
+                        android:id="@+id/tv_recordatorio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/msg_recordatorio"
+                        android:textAlignment="center"
+                        android:textColor="#020202"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_proximacita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/msg_proxima_cita"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.278"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/tv_fechaCita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ems="10"
+                        android:inputType="date"
+                        android:text="15/07/2022"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.26"
+                        app:layout_constraintStart_toEndOf="@+id/tv_proximacita"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
+                        app:layout_constraintVertical_bias="0.321" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/ib_add_perfil"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicladorPerfil"
+        android:layout_width="414dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        android:paddingTop="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        tools:layout_editor_absoluteX="-61dp" />
 
-        <TableLayout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_historial_medico"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/msg_historial_medico"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_historial_Medico_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mi, interdum quis arcu non, fringilla molestie nibh. Etiam a sodales arcu. Nulla lectus purus, pulvinar eget elit non, vehicula euismod justo. Maecenas facilisis magna at condimentum aliquet. Donec at est dui. Curabitur vestibulum, nibh et tincidunt mattis, leo nunc ultrices diam, sed porta risus neque at eros. Pellentesque lobortis libero vel pretium congue. "
+            android:textAlignment="viewStart" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_Nombre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="@string/msg_nombre"
-                        android:translationX="5dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <View
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="?android:attr/listDivider" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/vistaFilaPerfil"
-                    android:layout_width="match_parent"
-                    android:layout_height="88dp"
-                    android:layout_margin="10dp"
-                    app:cardBackgroundColor="#DFDFDF"
-                    app:cardCornerRadius="25dp"
-                    app:cardElevation="5dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="381dp"
-                        android:layout_height="89dp"
-                        tools:layout_editor_absoluteX="1dp">
-
-                        <TextView
-                            android:id="@+id/tv_recordatorio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/msg_recordatorio"
-                            android:textAlignment="center"
-                            android:textColor="#020202"
-                            android:textSize="24sp"
-                            android:textStyle="bold"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/tv_proximacita"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="@string/msg_proximaCita"
-                            android:textAlignment="center"
-                            android:textColor="#000000"
-                            android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.221"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
-                            app:layout_constraintVertical_bias="0.407" />
-
-                        <TextView
-                            android:id="@+id/tv_fechaCita"
-                            android:layout_width="115dp"
-                            android:layout_height="48dp"
-                            android:layout_marginTop="2dp"
-                            android:ems="10"
-                            android:inputType="date"
-                            android:text="15/07/2022"
-                            android:textColor="#000000"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.265"
-                            app:layout_constraintStart_toEndOf="@+id/tv_proximacita"
-                            app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
-                            app:layout_constraintVertical_bias="0.0" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-            </TableRow>
-
-            <View
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="?android:attr/listDivider" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/ibFechaNacimiento"
-                        android:layout_width="58dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="#00FFFFFF"
-                        android:baselineAlignBottom="true"
-                        android:src="@drawable/ic_fecha_nacimiento"
-                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:id="@+id/tv_fechaNacimiento"
-                        android:layout_width="129dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:text="@string/msg_fechanacimiento"
-                        android:textSize="12sp"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                    <ImageButton
-                        android:id="@+id/ibPeso"
-                        android:layout_width="34dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="#00FFFFFF"
-                        android:baselineAlignBottom="true"
-                        android:src="@drawable/ic_peso"
-                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/tv_peso"
-                        android:layout_width="182dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:text="@string/msg_Peso"
-                        tools:ignore="TouchTargetSizeCheck" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/ibDireccion"
-                        android:layout_width="58dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="#00FFFFFF"
-                        android:baselineAlignBottom="true"
-                        android:src="@drawable/ic_direccion"
-                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/tv_direccion"
-                        android:layout_width="129dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:text="@string/msg_direccion"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                    <ImageButton
-                        android:id="@+id/ibEstatura"
-                        android:layout_width="34dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="#00FFFFFF"
-                        android:baselineAlignBottom="true"
-                        android:src="@drawable/ic_altura"
-                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:id="@+id/tv_statura"
-                        android:layout_width="182dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:text="@string/msg_estatura"
-                        android:textAlignment="viewStart"
-                        tools:ignore="TouchTargetSizeCheck" />
-                </LinearLayout>
-            </TableRow>
-
-            <View
-                android:id="@+id/divider6"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="?android:attr/listDivider" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/ib_telefono"
-                        android:layout_width="13dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="#00FFFFFF"
-                        android:baselineAlignBottom="true"
-                        android:src="@drawable/ic_call"
-                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/tv_telefono"
-                        android:layout_width="304dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:text="@string/msg_telefono"
-                        tools:ignore="TouchTargetSizeCheck" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageButton
-                            android:id="@+id/ib_correo"
-                            android:layout_width="35dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="#00FFFFFF"
-                            android:baselineAlignBottom="true"
-                            android:src="@drawable/ic_email"
-                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                        <TextView
-                            android:id="@+id/tv_correo_electronico"
-                            android:layout_width="248dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:text="@string/msg_correo"
-                            tools:ignore="TouchTargetSizeCheck" />
-
-                        <ImageButton
-                            android:id="@+id/ib_update_perfil"
-                            android:layout_width="12dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="#00FFFFFF"
-                            android:baselineAlignBottom="true"
-                            android:src="@drawable/ic_edit"
-                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                        <ImageButton
-                            android:id="@+id/ib_add_perfil"
-                            android:layout_width="12dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="#00FFFFFF"
-                            android:baselineAlignBottom="true"
-                            android:src="@drawable/ic_add"
-                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                    </LinearLayout>
-                </TableRow>
-
-            </TableRow>
-
-            <View
-                android:id="@+id/divider7"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="?android:attr/listDivider" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_historialMedico"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/msg_historialMedico"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tv_historialMedico_description"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mi, interdum quis arcu non, fringilla molestie nibh. Etiam a sodales arcu. Nulla lectus purus, pulvinar eget elit non, vehicula euismod justo. Maecenas facilisis magna at condimentum aliquet. Donec at est dui. Curabitur vestibulum, nibh et tincidunt mattis, leo nunc ultrices diam, sed porta risus neque at eros. Pellentesque lobortis libero vel pretium congue. "
-                        android:textAlignment="viewStart" />
-
-                </LinearLayout>
-
-
-            </TableRow>
-
-
-        </TableLayout>
-    </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

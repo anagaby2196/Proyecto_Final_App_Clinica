@@ -10,12 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.clinica_medica.R
 import com.clinica_medica.databinding.FragmentAddPromocionBinding
-import com.clinica_medica.databinding.FragmentAddServicioBinding
-import com.clinica_medica.databinding.FragmentPromocionBinding
 import com.clinica_medica.model.Promocion
-import com.clinica_medica.model.Servicio
 import com.clinica_medica.viewmodel.PromocionViewModel
-import com.clinica_medica.viewmodel.ServicioViewModel
 
 class AddPromocionFragment : Fragment() {
 
@@ -43,10 +39,10 @@ class AddPromocionFragment : Fragment() {
         if(nombrePromocion.isNotEmpty()) {
             val promocion = Promocion(0,nombrePromocion,descripcionPromocion,descuento.toInt())
             promocionViewModel.addPromocion(promocion)
-            Toast.makeText(requireContext(),getString(R.string.promocionAdded), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.promocion_added), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_addPromocionFragment_to_nav_promocion)
         } else {
-            Toast.makeText(requireContext(),getString(R.string.noDataPromocion), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.no_data_promocion), Toast.LENGTH_SHORT).show()
 
         }
     }

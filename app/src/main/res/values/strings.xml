@@ -23,32 +23,32 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--    Valores para agregar un servicio-->
-    <string name="msg_nombreServicio">Nombre del Servicio</string>
-    <string name="msg_descripcionServicio">Descripción del Servicio</string>
+    <string name="msg_nombre_servicio">Nombre del Servicio</string>
+    <string name="msg_descripcion_servicio">Descripción del Servicio</string>
     <string name="msg_costo">Costo del Servicio</string>
-    <string name="bt_agregarServicio">Agregar nuevo servicio</string>
-    <string name="bt_actualizarServicio">Actualizar servicio</string>
-    <string name="servicioAdded">Servicio agregado</string>
-    <string name="noDataServicio">Fallo agregando servicio. Faltan datos.</string>
-    <string name="servicioUpdated">Servicio actualizado</string>
+    <string name="bt_agregar_servicio">Agregar nuevo servicio</string>
+    <string name="bt_actualizar_servicio">Actualizar servicio</string>
+    <string name="servicio_added">Servicio agregado</string>
+    <string name="no_data_servicio">Fallo agregando servicio. Faltan datos.</string>
+    <string name="servicio_updated">Servicio actualizado</string>
     <string name="delete">Eliminar servicio</string>
 
     <!--    Globales-->
     <string name="fail">Fallo actualizando</string>
-    <string name="seguroBorrar">"¿Está seguro de eliminar "</string>
+    <string name="seguro_borrar">"¿Está seguro de eliminar "</string>
     <string name="si">Si</string>
     <string name="no">No</string>
 
     <!--    Valores para agregar una promoción-->
-    <string name="msg_nombrePromocion">Nombre de la Promoción</string>
-    <string name="msg_descripcionPromocion">Descripción de la Promoción</string>
+    <string name="msg_nombre_promocion">Nombre de la Promoción</string>
+    <string name="msg_descripcion_promocion">Descripción de la Promoción</string>
     <string name="msg_descuento">Descuento Aplicado</string>
-    <string name="bt_agregarPromocion">Agregar nueva promoción</string>
-    <string name="bt_actualizarPromocion">Actualizar promoción</string>
-    <string name="promocionAdded">Promoción agregada</string>
-    <string name="noDataPromocion">Fallo agregando promoción. Faltan datos.</string>
-    <string name="promocionUpdated">Promoción actualizada</string>
-    <string name="deletePromocion">Eliminar Promoción</string>
+    <string name="bt_agregar_promocion">Agregar nueva promoción</string>
+    <string name="bt_actualizar_promocion">Actualizar promoción</string>
+    <string name="promocion_added">Promoción agregada</string>
+    <string name="no_data_promocion">Fallo agregando promoción. Faltan datos.</string>
+    <string name="promocion_updated">Promoción actualizada</string>
+    <string name="delete_promocion">Eliminar Promoción</string>
 
     <!--    Contacto  -->
     <string name="msg_enviar_correo">Enviar correo electrónico</string>
@@ -63,25 +63,25 @@
     <string name="error">Error</string>
 
     <!--    Perfil  -->
-    <string name="msg_nombre">Nombre</string>
-    <string name="msg_primerapellido">Primer Apellido</string>
-    <string name="msg_segundoapellido">Segundo Apellido</string>
+    <string name="msg_nombre_usuario">Nombre del Usuario</string>
+    <string name="msg_primer_apellido">Primer Apellido</string>
+    <string name="msg_segundo_apellido">Segundo Apellido</string>
     <string name="msg_identificacion">Identificación</string>
     <string name="msg_telefono">Teléfono</string>
     <string name="msg_correo">Correo Electrónico</string>
     <string name="msg_edad">Edad</string>
     <string name="msg_genero">Género</string>
     <string name="msg_direccion">Dirección</string>
-    <string name="msg_fechanacimiento">Fecha de nacimiento</string>
-    <string name="msg_Peso">Peso</string>
+    <string name="msg_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="msg_peso">Peso</string>
     <string name="msg_estatura">Estatura</string>
-    <string name="msg_fechaCita">Fecha de cita</string>
-    <string name="msg_proximaCita">Próxima cita</string>
+    <string name="msg_fecha_cita">Fecha de cita</string>
+    <string name="msg_proxima_cita">Próxima cita</string>
     <string name="msg_recordatorio">Recordatorio</string>
-    <string name="msg_historialMedico">Historial Médico</string>
-    <string name="bt_actualizarPerfil">Actualizar Perfil</string>
-    <string name="bt_addPerfil">Agregar Datos del Perfil</string>
-    <string name="perfilUpdated">Perfil actualizado</string>
-    <string name="perfilAdded">Datos del perfil agregados</string>
-    <string name="noDataPerfil">Fallo agregando datos al perfil. Faltan datos.</string>
+    <string name="msg_historial_medico">Historial Médico</string>
+    <string name="bt_actualizar_perfil">Actualizar Perfil</string>
+    <string name="bt_add_perfil">Agregar Datos del Perfil</string>
+    <string name="perfil_updated">Perfil actualizado</string>
+    <string name="perfil_added">Datos del perfil agregados</string>
+    <string name="no_data_perfil">Fallo agregando datos al perfil. Faltan datos.</string>
 </resources>

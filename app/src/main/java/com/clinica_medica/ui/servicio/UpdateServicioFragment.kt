@@ -47,7 +47,7 @@ class UpdateServicioFragment : Fragment() {
         if(nombreServicio.isNotEmpty()) {
             val servicio = Servicio(args.servicio.id,nombreServicio,descripcion, costo.toInt(),"")
             servicioViewModel.updateServicio(servicio)
-            Toast.makeText(requireContext(),getString(R.string.servicioUpdated), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.servicio_updated), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateServicioFragment_to_nav_servicio)
         } else {
             Toast.makeText(requireContext(),getString(R.string.fail), Toast.LENGTH_SHORT).show()
@@ -70,7 +70,7 @@ class UpdateServicioFragment : Fragment() {
         val consulta = AlertDialog.Builder(requireContext())
 
         consulta.setTitle(R.string.delete)
-        consulta.setMessage(getString(R.string.seguroBorrar)+"${args.servicio.nombreServicio}?")
+        consulta.setMessage(getString(R.string.seguro_borrar)+"${args.servicio.nombreServicio}?")
 
         consulta.setPositiveButton(getString(R.string.si)) {_,_ ->
             servicioViewModel.deleteServicio(args.servicio)

@@ -11,8 +11,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.clinica_medica.R
 import com.clinica_medica.databinding.FragmentContactoBinding
 import com.clinica_medica.viewmodel.ContactoViewModel

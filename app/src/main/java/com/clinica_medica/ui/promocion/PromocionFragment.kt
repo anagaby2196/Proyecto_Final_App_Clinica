@@ -10,10 +10,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.clinica_medica.R
 import com.clinica_medica.adapter.PromocionAdapter
-import com.clinica_medica.adapter.ServicioAdapter
 import com.clinica_medica.databinding.FragmentPromocionBinding
 import com.clinica_medica.viewmodel.PromocionViewModel
-import com.clinica_medica.viewmodel.ServicioViewModel
 
 class PromocionFragment : Fragment() {
 

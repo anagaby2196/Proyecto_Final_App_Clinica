@@ -14,7 +14,7 @@ import com.clinica_medica.model.Perfil
 import com.clinica_medica.viewmodel.PerfilViewModel
 
 class AddPerfilFragment : Fragment() {
-
+//
 //    private lateinit var perfilViewModel: PerfilViewModel
 //    private var _binding: FragmentAddPerfilBinding? = null
 //    private val binding get() = _binding!!
@@ -26,27 +26,27 @@ class AddPerfilFragment : Fragment() {
 //        perfilViewModel = ViewModelProvider(this)[PerfilViewModel::class.java]
 //        _binding = FragmentAddPerfilBinding.inflate(inflater, container, false)
 //
-//        binding.btAddPerfil.setOnClickListener { addPerfil() }
+//        binding.btAgregarDatosPerfil.setOnClickListener { addDatosPerfil() }
 //
 //        return binding.root
 //    }
 //
-//    private fun addPerfil() {
-//        val nombreUsuario=binding.tvNombre.text.toString()
-//        val fechaNacimiento=binding.tvFechaNacimiento.text.toString()
-//        val direccion=binding.tvDireccion.text.toString()
-//        val peso=binding.tvPeso.text.toString()
-//        val estatura=binding.tvEstatura.text.toString()
-//        val telefono=binding.tvTelefono.text.toString()
-//        val correoElectronico=binding.tvCorreoElectronico.text.toString()
+//    private fun addDatosPerfil() {
+//        val nombreUsuario=binding.etNombreUsuario.text.toString()
+//        val fechaNacimiento=binding.etFechaNacimiento.text.toString()
+//        val direccion=binding.etDireccion.text.toString()
+//        val peso=binding.etPeso.text.toString()
+//        val estatura=binding.etEstatura.text.toString()
+//        val telefono=binding.etNumeroTelefonico.text.toString()
+//        val correoElectronico=binding.etCorreoElectronico.text.toString()
 //
 //        if(nombreUsuario.isNotEmpty()) {
-//            val perfil = Perfil(0,nombreUsuario,fechaNacimiento.toInt(),direccion,peso.toDouble(),estatura.toDouble(),telefono.toInt(),correoElectronico,"")
-//            perfilViewModel.addPerfil(perfil)
-//            Toast.makeText(requireContext(),getString(R.string.perfilAdded), Toast.LENGTH_SHORT).show()
+//            val perfil = Perfil(0,nombreUsuario,fechaNacimiento,direccion,peso.toDouble(),estatura.toDouble(),telefono.toInt(),correoElectronico,"")
+//            perfilViewModel.addDatosPerfil(perfil)
+//            Toast.makeText(requireContext(),getString(R.string.perfil_added), Toast.LENGTH_SHORT).show()
 //            findNavController().navigate(R.id.action_addPerfilFragment_to_nav_perfil)
 //        } else {
-//            Toast.makeText(requireContext(),getString(R.string.noDataPerfil), Toast.LENGTH_SHORT).show()
+//            Toast.makeText(requireContext(),getString(R.string.no_data_perfil), Toast.LENGTH_SHORT).show()
 //
 //        }
 //    }

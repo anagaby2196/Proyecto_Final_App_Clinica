@@ -39,10 +39,10 @@ class AddServicioFragment : Fragment() {
         if(nombreServicio.isNotEmpty()) {
             val servicio = Servicio(0,nombreServicio,descripcion,costo.toInt(),"")
             servicioViewModel.addServicio(servicio)
-            Toast.makeText(requireContext(),getString(R.string.servicioAdded), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.servicio_added), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_addServicioFragment_to_nav_servicio)
         } else {
-            Toast.makeText(requireContext(),getString(R.string.noDataServicio), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.no_data_servicio), Toast.LENGTH_SHORT).show()
 
         }
     }

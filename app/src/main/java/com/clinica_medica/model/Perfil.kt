@@ -5,6 +5,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
+import java.text.DateFormat
 import java.util.*
 
 @Parcelize
@@ -16,7 +17,7 @@ data class Perfil(
     @ColumnInfo(name="nombreUsuario")
     val nombreUsuario:String,
     @ColumnInfo(name="fechaNacimiento")
-    val fechaNacimiento:Int,
+    val fechaNacimiento:String,
     @ColumnInfo(name="direccion")
     val direccion:String,
     @ColumnInfo(name="peso")
