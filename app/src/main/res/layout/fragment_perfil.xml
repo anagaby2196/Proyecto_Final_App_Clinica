@@ -6,83 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.perfil.PerfilFragment">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/vistaFilaPerfil"
-                android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="#DFDFDF"
-                app:cardCornerRadius="25dp"
-                app:cardElevation="5dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="381dp"
-                    android:layout_height="89dp"
-                    tools:layout_editor_absoluteX="1dp">
-
-                    <TextView
-                        android:id="@+id/tv_recordatorio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/msg_recordatorio"
-                        android:textAlignment="center"
-                        android:textColor="#020202"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_proximacita"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/msg_proxima_cita"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.278"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                    <TextView
-                        android:id="@+id/tv_fechaCita"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:ems="10"
-                        android:inputType="date"
-                        android:text="15/07/2022"
-                        android:textColor="#000000"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.26"
-                        app:layout_constraintStart_toEndOf="@+id/tv_proximacita"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_recordatorio"
-                        app:layout_constraintVertical_bias="0.321" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-        </TableRow>
-    </TableLayout>
-
     <ImageButton
         android:id="@+id/ib_add_perfil"
         android:layout_width="61dp"
@@ -99,54 +22,11 @@
         android:id="@+id/recicladorPerfil"
         android:layout_width="414dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/divider7"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="?android:attr/listDivider"
-        android:paddingTop="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-61dp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="350dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/tv_historial_medico"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/msg_historial_medico"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_historial_Medico_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem mi, interdum quis arcu non, fringilla molestie nibh. Etiam a sodales arcu. Nulla lectus purus, pulvinar eget elit non, vehicula euismod justo. Maecenas facilisis magna at condimentum aliquet. Donec at est dui. Curabitur vestibulum, nibh et tincidunt mattis, leo nunc ultrices diam, sed porta risus neque at eros. Pellentesque lobortis libero vel pretium congue. "
-            android:textAlignment="viewStart" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

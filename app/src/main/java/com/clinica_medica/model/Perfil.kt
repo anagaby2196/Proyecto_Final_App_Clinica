@@ -5,7 +5,6 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
-import java.text.DateFormat
 import java.util.*
 
 @Parcelize
@@ -29,5 +28,7 @@ data class Perfil(
     @ColumnInfo(name="correoElectronico")
     val correoElectronico:String,
     @ColumnInfo(name="historial")
-    val historial:String
+    val historial:String,
+    @ColumnInfo(name="fechaCita")
+    val fechaCita:String
 ) : Parcelable

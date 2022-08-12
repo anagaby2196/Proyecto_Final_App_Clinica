@@ -18,7 +18,7 @@ interface PerfilDao {
     @Delete
     suspend fun deletePerfil(perfil: Perfil)
 
-    @Query ("SELECT * FROM PERFIL WHERE ID=1")
+    @Query ("SELECT * FROM PERFIL")
     fun getAllData(): LiveData<List<Perfil>>
 
 

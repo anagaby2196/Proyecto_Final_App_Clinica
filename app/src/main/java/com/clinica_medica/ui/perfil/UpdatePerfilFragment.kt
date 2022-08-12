@@ -35,6 +35,7 @@ class UpdatePerfilFragment : Fragment() {
         binding.etEstatura.setText(args.perfil.estatura.toString())
         binding.etNumeroTelefonico.setText(args.perfil.numeroTelefono.toString())
         binding.etCorreoElectronico.setText(args.perfil.correoElectronico)
+        binding.etHistorialMedico.setText(args.perfil.historial)
 
         binding.btActualizarDatosPerfl.setOnClickListener { updatePerfil() }
 
@@ -51,11 +52,13 @@ class UpdatePerfilFragment : Fragment() {
         val estatura=binding.etEstatura.text.toString()
         val numeroTelefonico=binding.etNumeroTelefonico.text.toString()
         val correoElectronico=binding.etCorreoElectronico.text.toString()
+        val historialMedico=binding.etHistorialMedico.text.toString()
+        val fechaCita=binding.etfechaCita.text.toString()
 
 
         if(nombreUsuario.isNotEmpty()) {
             val perfil = Perfil(args.perfil.id,nombreUsuario,fechaNacimiento,direccion,peso.toDouble(),estatura.toDouble(), numeroTelefonico.toInt(),correoElectronico
-            ,"")
+            ,historialMedico,fechaCita)
             perfilViewModel.updatePerfil(perfil)
             Toast.makeText(requireContext(),getString(R.string.perfil_updated), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updatePerfilFragment_to_nav_perfil)

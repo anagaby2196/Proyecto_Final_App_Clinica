@@ -84,4 +84,5 @@
     <string name="perfil_updated">Perfil actualizado</string>
     <string name="perfil_added">Datos del perfil agregados</string>
     <string name="no_data_perfil">Fallo agregando datos al perfil. Faltan datos.</string>
+    <string name="bt_add_historial_medico">Agregar historial medico</string>
 </resources>

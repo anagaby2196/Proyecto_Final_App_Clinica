@@ -21,6 +21,8 @@ class PerfilAdapter : RecyclerView.Adapter<PerfilAdapter.PerfilViewHolder>() {
             itemBinding.tvEstatura.text = datosPerfil.estatura.toString()
             itemBinding.tvNumeroTelefonico.text = datosPerfil.numeroTelefono.toString()
             itemBinding.tvCorreoElectronico.text = datosPerfil.correoElectronico
+            itemBinding.tvHistorialMedico.text = datosPerfil.historial
+            itemBinding.tvFechaCita.text = datosPerfil.fechaCita
 
             itemBinding.vistaFilaPerfil.setOnClickListener{
                 val accion = PerfilFragmentDirections.actionNavPerfilToUpdatePerfilFragment(datosPerfil)

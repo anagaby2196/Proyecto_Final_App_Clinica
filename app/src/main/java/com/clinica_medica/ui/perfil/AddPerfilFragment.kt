@@ -39,9 +39,11 @@ class AddPerfilFragment : Fragment() {
         val estatura=binding.etEstatura.text.toString()
         val telefono=binding.etNumeroTelefonico.text.toString()
         val correoElectronico=binding.etCorreoElectronico.text.toString()
+        val historialMedico=binding.etHistorialMedico.text.toString()
+        val fechaCita=binding.etfechaCita.text.toString()
 
         if(nombreUsuario.isNotEmpty()) {
-            val perfil = Perfil(0,nombreUsuario,fechaNacimiento,direccion,peso.toDouble(),estatura.toDouble(),telefono.toInt(),correoElectronico,"")
+            val perfil = Perfil(0,nombreUsuario,fechaNacimiento,direccion,peso.toDouble(),estatura.toDouble(),telefono.toInt(),correoElectronico,historialMedico,fechaCita)
             perfilViewModel.addDatosPerfil(perfil)
             Toast.makeText(requireContext(),getString(R.string.perfil_added), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_addPerfilFragment_to_nav_perfil)
