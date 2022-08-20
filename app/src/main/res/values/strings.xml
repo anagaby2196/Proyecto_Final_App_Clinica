@@ -13,7 +13,7 @@
     <string name="action_settings">Settings</string>
 
     <!--    Valores del Slideshow-->
-    <string name="menu_perfil">Perfil</string>
+    <string name="menu_perfiles">Perfiles de los Usuarios</string>
     <string name="menu_cita">Citas</string>
     <string name="menu_expediente">Expedientes</string>
     <string name="menu_servicio">Servicios</string>
@@ -85,4 +85,6 @@
     <string name="perfil_added">Datos del perfil agregados</string>
     <string name="no_data_perfil">Fallo agregando datos al perfil. Faltan datos.</string>
     <string name="bt_add_historial_medico">Agregar historial medico</string>
+    <string name="delete_perfil">Eliminar perfil</string>
+    <string name="seguro_borrar_perfil">"¿Está seguro de eliminar el pefil de "</string>
 </resources>

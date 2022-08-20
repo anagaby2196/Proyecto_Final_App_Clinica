@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_user"
-            android:title="@string/menu_perfil" />
+            android:title="@string/menu_perfiles" />
         <item
             android:id="@+id/nav_cita"
             android:icon="@drawable/ic_appointments"

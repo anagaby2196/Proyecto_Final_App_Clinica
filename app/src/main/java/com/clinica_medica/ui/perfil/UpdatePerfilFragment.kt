@@ -81,8 +81,8 @@ class UpdatePerfilFragment : Fragment() {
     private fun deletePerfil() {
         val consulta = AlertDialog.Builder(requireContext())
 
-        consulta.setTitle(R.string.delete_promocion)
-        consulta.setMessage(getString(R.string.seguro_borrar)+"${args.perfil.nombreUsuario}?")
+        consulta.setTitle(R.string.delete_perfil)
+        consulta.setMessage(getString(R.string.seguro_borrar_perfil)+"${args.perfil.nombreUsuario}?")
 
         consulta.setPositiveButton(getString(R.string.si)) {_,_ ->
             perfilViewModel.deletePerfil(args.perfil)
