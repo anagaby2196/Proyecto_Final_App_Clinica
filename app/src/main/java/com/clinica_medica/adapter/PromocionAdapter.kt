@@ -12,21 +12,26 @@ class PromocionAdapter : RecyclerView.Adapter<PromocionAdapter.PromocionViewHold
 
     private var listaPromociones = emptyList<Promocion>()
 
-    inner class PromocionViewHolder(private val itemBinding: PromocionFilaBinding) : RecyclerView.ViewHolder(itemBinding.root) {
-        fun dibuja(promocion : Promocion) {
+    inner class PromocionViewHolder(private val itemBinding: PromocionFilaBinding) :
+        RecyclerView.ViewHolder(itemBinding.root) {
+        fun dibuja(promocion: Promocion) {
             itemBinding.tvNombrePromocion.text = promocion.nombrePromocion
             itemBinding.tvDescripcionPromocion.text = promocion.descripcion
             itemBinding.tvDescuento.text = promocion.descuento.toString()
 
-            itemBinding.vistaFilaPromociones.setOnClickListener{
-                val accion = PromocionFragmentDirections.actionNavPromocionToUpdatePromocionFragment(promocion)
+            itemBinding.vistaFilaPromociones.setOnClickListener {
+                val accion =
+                    PromocionFragmentDirections.actionNavPromocionToUpdatePromocionFragment(
+                        promocion
+                    )
                 itemView.findNavController().navigate(accion)
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PromocionViewHolder {
-        val itemBinding = PromocionFilaBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val itemBinding =
+            PromocionFilaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PromocionViewHolder(itemBinding)
     }
 
@@ -39,7 +44,7 @@ class PromocionAdapter : RecyclerView.Adapter<PromocionAdapter.PromocionViewHold
         return listaPromociones.size
     }
 
-    fun setData(promociones : List<Promocion>) {
+    fun setData(promociones: List<Promocion>) {
         this.listaPromociones = promociones
         notifyDataSetChanged()
     }

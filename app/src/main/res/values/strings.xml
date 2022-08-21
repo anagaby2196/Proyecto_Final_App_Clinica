@@ -22,7 +22,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!--    Valores para agregar un servicio-->
+    <!--    Globales-->
+    <string name="fail">Fallo actualizando</string>
+    <string name="seguro_borrar">"¿Está seguro de eliminar "</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="msg_padecimiento">Padecimiento</string>
+    <string name="msg_fecha">Fecha</string>
+    <string name="msg_hora">Hora</string>
+    <string name="msg_dia">Día</string>
+    <string name="msg_nombre_doctor">Nombre del Doctor</string>
+    <string name="msg_nombre_paciente">Nombre del paciente</string>
+
+    <!--    Servicio-->
     <string name="msg_nombre_servicio">Nombre del Servicio</string>
     <string name="msg_descripcion_servicio">Descripción del Servicio</string>
     <string name="msg_costo">Costo del Servicio</string>
@@ -33,13 +45,7 @@
     <string name="servicio_updated">Servicio actualizado</string>
     <string name="delete">Eliminar servicio</string>
 
-    <!--    Globales-->
-    <string name="fail">Fallo actualizando</string>
-    <string name="seguro_borrar">"¿Está seguro de eliminar "</string>
-    <string name="si">Si</string>
-    <string name="no">No</string>
-
-    <!--    Valores para agregar una promoción-->
+    <!--    Promoción-->
     <string name="msg_nombre_promocion">Nombre de la Promoción</string>
     <string name="msg_descripcion_promocion">Descripción de la Promoción</string>
     <string name="msg_descuento">Descuento Aplicado</string>
@@ -87,4 +93,25 @@
     <string name="bt_add_historial_medico">Agregar historial medico</string>
     <string name="delete_perfil">Eliminar perfil</string>
     <string name="seguro_borrar_perfil">"¿Está seguro de eliminar el pefil de "</string>
+
+    <!--    Cita  -->
+    <string name="cita_added">Datos de la cita agregados</string>
+    <string name="no_data_cita">Fallo agregando la cita. Faltan datos</string>
+    <string name="cita_updated">Cita actualizada</string>
+    <string name="delete_cita">Eliminar Cita</string>
+    <string name="seguro_borrar_cita">"¿Está seguro de eliminar la cita de "</string>
+    <string name="bt_add_cita">Agregar datos de la cita</string>
+    <string name="bt_actualizar_cita">Actualizar cita</string>
+
+    <!--    Expediente  -->
+    <string name="expediente_added">Datos del expediente agregados</string>
+    <string name="no_data_expediente">Fallo agregando el expediente. Faltan datos</string>
+    <string name="expediente_updated">Expediente actualizado</string>
+    <string name="delete_expediente">Eliminar Expediente</string>
+    <string name="seguro_borrar_expediente">"¿Está seguro de eliminar el expediente de "</string>
+    <string name="msg_medicamentos">Medicamentos</string>
+    <string name="msg_cuidados">Cuidados</string>
+    <string name="bt_add_expediente">Agregar datos al expediente</string>
+    <string name="bt_actualizar_expediente">Actualizar expediente</string>
+
 </resources>

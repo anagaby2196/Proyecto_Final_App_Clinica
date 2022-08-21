@@ -14,8 +14,12 @@
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/activity_pantalla_index.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/activity_principal.xml" value="0.24615384615384617" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/app_bar_principal.xml" value="0.264" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/cita_fila.xml" value="0.536" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/content_pantalla_index.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/content_principal.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/expediente_fila.xml" value="0.4" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_cita.xml" value="0.25" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_expediente.xml" value="0.264" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_historial_medico.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_perfil.xml" value="0.29930795847750863" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_add_promocion.xml" value="0.4" />
@@ -26,6 +30,8 @@
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_perfil.xml" value="0.4" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_promocion.xml" value="0.1" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_servicio.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_update_cita.xml" value="0.25" />
+        <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_update_expediente.xml" value="0.25" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_update_perfil.xml" value="0.2" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_update_promocion.xml" value="0.24615384615384617" />
         <entry key="..\:/Users/aniga/Documents/GitHub/Proyecto_Final_App_Clinica/app/src/main/res/layout/fragment_update_servicio.xml" value="0.1" />

@@ -1,6 +1,5 @@
 package com.clinica_medica.data
 
-import android.database.sqlite.SQLiteDatabase
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.clinica_medica.model.Perfil

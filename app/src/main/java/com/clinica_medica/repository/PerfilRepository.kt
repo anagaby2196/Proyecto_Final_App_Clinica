@@ -3,7 +3,6 @@ package com.clinica_medica.repository
 import androidx.lifecycle.LiveData
 import com.clinica_medica.data.PerfilDao
 import com.clinica_medica.model.Perfil
-import com.clinica_medica.model.Promocion
 
 class PerfilRepository(private val perfilDao: PerfilDao) {
 

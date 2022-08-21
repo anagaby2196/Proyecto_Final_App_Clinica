@@ -4,40 +4,50 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.clinica_medica.R
+import com.clinica_medica.adapter.ExpedienteAdapter
 import com.clinica_medica.databinding.FragmentExpedienteBinding
 import com.clinica_medica.viewmodel.ExpedienteViewModel
 
 class ExpedienteFragment : Fragment() {
 
+    private lateinit var expedienteViewModel: ExpedienteViewModel
     private var _binding: FragmentExpedienteBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val expedienteViewModel =
-            ViewModelProvider(this).get(ExpedienteViewModel::class.java)
-
+        expedienteViewModel = ViewModelProvider(this)[ExpedienteViewModel::class.java]
         _binding = FragmentExpedienteBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        expedienteViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.ibAddExpediente.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_expediente_to_addExpedienteFragment)
         }
-        return root
+
+        //Activar el reciclador - RecyclerView
+        val expedienteAdapter = ExpedienteAdapter()
+        val recicladorExpediente = binding.recicladorExpediente
+
+        recicladorExpediente.adapter = expedienteAdapter
+        recicladorExpediente.layoutManager = LinearLayoutManager(requireContext())
+
+        expedienteViewModel = ViewModelProvider(this)[ExpedienteViewModel::class.java]
+
+        expedienteViewModel.getAllData.observe(viewLifecycleOwner) {
+                expediente -> expedienteAdapter.setData(expediente)
+        }
+        return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }

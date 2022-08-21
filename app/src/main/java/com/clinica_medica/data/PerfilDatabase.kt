@@ -1,6 +1,5 @@
 package com.clinica_medica.data
 
-import android.database.sqlite.SQLiteDatabase
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase

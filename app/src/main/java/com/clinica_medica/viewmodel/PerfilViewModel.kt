@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.*
 import com.clinica_medica.data.PerfilDatabase
 import com.clinica_medica.model.Perfil
-import com.clinica_medica.model.Promocion
 import com.clinica_medica.repository.PerfilRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

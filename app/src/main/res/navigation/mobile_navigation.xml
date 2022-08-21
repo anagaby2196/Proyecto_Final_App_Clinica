@@ -21,12 +21,26 @@
         android:id="@+id/nav_cita"
         android:name="com.clinica_medica.ui.cita.CitaFragment"
         android:label="@string/menu_cita"
-        tools:layout="@layout/fragment_cita" />
+        tools:layout="@layout/fragment_cita" >
+        <action
+            android:id="@+id/action_nav_cita_to_addCitaFragment"
+            app:destination="@id/addCitaFragment" />
+        <action
+            android:id="@+id/action_nav_cita_to_updateCitaFragment"
+            app:destination="@id/updateCitaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_expediente"
         android:name="com.clinica_medica.ui.expediente.ExpedienteFragment"
         android:label="@string/menu_expediente"
-        tools:layout="@layout/fragment_expediente" />
+        tools:layout="@layout/fragment_expediente" >
+        <action
+            android:id="@+id/action_nav_expediente_to_addExpedienteFragment"
+            app:destination="@id/addExpedienteFragment" />
+        <action
+            android:id="@+id/action_nav_expediente_to_updateExpedienteFragment"
+            app:destination="@id/updateExpedienteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_servicio"
         android:name="com.clinica_medica.ui.servicio.ServicioFragment"
@@ -118,5 +132,47 @@
         <argument
             android:name="perfil"
             app:argType="com.clinica_medica.model.Perfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCitaFragment"
+        android:name="com.clinica_medica.ui.cita.AddCitaFragment"
+        android:label="@string/bt_add_cita"
+        tools:layout="@layout/fragment_add_cita" >
+        <action
+            android:id="@+id/action_addCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCitaFragment"
+        android:name="com.clinica_medica.ui.cita.UpdateCitaFragment"
+        android:label="@string/bt_actualizar_cita"
+        tools:layout="@layout/fragment_update_cita" >
+        <action
+            android:id="@+id/action_updateCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+        <argument
+            android:name="cita"
+            app:argType="com.clinica_medica.model.Cita" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExpedienteFragment"
+        android:name="com.clinica_medica.ui.expediente.AddExpedienteFragment"
+        android:label="@string/bt_add_expediente"
+        tools:layout="@layout/fragment_add_expediente" >
+        <action
+            android:id="@+id/action_addExpedienteFragment_to_nav_expediente"
+            app:destination="@id/nav_expediente" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateExpedienteFragment"
+        android:name="com.clinica_medica.ui.expediente.UpdateExpedienteFragment"
+        android:label="@string/bt_actualizar_expediente"
+        tools:layout="@layout/fragment_update_expediente" >
+        <action
+            android:id="@+id/action_updateExpedienteFragment_to_nav_expediente"
+            app:destination="@id/nav_expediente" />
+        <argument
+            android:name="expediente"
+            app:argType="com.clinica_medica.model.Expediente" />
     </fragment>
 </navigation>
