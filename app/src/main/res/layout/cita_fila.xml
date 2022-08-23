@@ -68,28 +68,54 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
+            android:id="@+id/tv_nombre_doctor_vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="56dp"
+            android:text="@string/msg_nombre_doctor"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/tv_nombre_doctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:layout_marginEnd="116dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="80dp"
             android:text="TextView"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombre_doctor_vista" />
+
+        <TextView
+            android:id="@+id/tv_padecimiento_vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="88dp"
+            android:text="@string/msg_padecimiento"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombre_doctor" />
 
         <TextView
             android:id="@+id/tv_padecimiento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="116dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="80dp"
             android:text="TextView"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nombre_doctor" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_padecimiento_vista" />
 
         <View
             android:id="@+id/divider4"

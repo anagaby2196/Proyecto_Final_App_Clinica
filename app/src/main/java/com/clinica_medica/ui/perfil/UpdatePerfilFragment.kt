@@ -36,6 +36,7 @@ class UpdatePerfilFragment : Fragment() {
         binding.etNumeroTelefonico.setText(args.perfil.numeroTelefono.toString())
         binding.etCorreoElectronico.setText(args.perfil.correoElectronico)
         binding.etHistorialMedico.setText(args.perfil.historial)
+        binding.etfechaCita.setText(args.perfil.fechaCita)
 
         binding.btActualizarDatosPerfl.setOnClickListener { updatePerfil() }
 
